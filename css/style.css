@@ -171,7 +171,7 @@ justify-content: space-between;
 
 
 /* cards*/
-.cards{
+.place-box .cards{
     display: flex;
     justify-content: center;
     background: var(--grey-dark-1);
@@ -179,12 +179,12 @@ justify-content: space-between;
     transition: 0.2s;
     flex-wrap: wrap;
 }
-.card:hover{
+.place-box .card:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; transition: 0.2s;
 }
 
-.card{
+.place-box .card{
     width: 400px;
     margin: 10px;
     background-color: var(--color-white);
@@ -194,26 +194,26 @@ justify-content: space-between;
     justify-content: center;
 }
 
-.card img{
+.place-box .card img{
     width: 100%;
     height: 100%;
     border-radius: 10px  10px 0 0;
     
 }
 
-.card p{
+.place-box .card p{
     font-size: 1.4rem;
 }
-.card h2{
+.place-box .card h2{
     font-size: 2rem;
     text-transform: capitalize;
 }
-.card-body,
+.place-box .card-body,
 .crad-footer{
     padding: 15px;
 }
 
-.card button{
+.place-box .card button{
     width: 150px;
     background-color: var(--primary-dark);
     border: 2px solid black;
@@ -228,7 +228,7 @@ justify-content: space-between;
 }
 
 
-.card button:hover{
+.place-box .card button:hover{
      
     background-color: var(--color-white);
     border: 2px solid black;
@@ -239,6 +239,74 @@ justify-content: space-between;
 
 
 
+#box-video{
+    min-height: 70vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .5;
+    /*mix-blend-mode: overlay;*/
+
+   
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 350px;
+}
+
+.hero h1{
+   font-weight: 700; 
+   font-size: 3.8rem;
+   color: var(--color-white);
+}
+.hero p{
+    font-size: 1.8rem;
+    color: var(--color-white); 
+    text-align: center;
+    margin-top: 7px;
+}
+#box-video button{
+    display: inline-block;
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--color-yellow);
+    width: 200px;
+    font-size: 1.8rem;
+    color: var(--primary-dark);
+    font-weight: 800;
+    transition: 150ms;
+    margin-top: 40px;
+}
+
+/*video*/
+
 
 @media(max-width: 768px){
 
@@ -247,5 +315,6 @@ justify-content: space-between;
         text-align: center;
         
     }
+
 
 }
