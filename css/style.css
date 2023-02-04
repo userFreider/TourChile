@@ -1,0 +1,101 @@
+/* importar aniamcion css*/
+
+@import url(/css/animate.css);
+/* variables css*/
+:root {
+    --primary-light: #126d49;
+    --primary-dark: #4f612a;
+    --color-light-green: #28b485;
+    --color-pink: #e2b5a8;
+    --colr-light-blue: #bbd4eb;
+    --color-grey: #707f80;
+    --color-yellow: #ffb900;
+    --color-blue: #2998ff;
+    --color-white: #fff;
+    --grey-dark: #777;
+    --grey-dark-1: #eee;
+}
+
+/* reset*/
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* header slide*/
+.header {
+    height: 80vh;
+    position: relative;
+}
+
+.header-slider-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(73, 121, 129, 0.7), rgba(52, 117, 143, 0.5)),
+    url(/image/img4.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    animation: slader1 10s infinite;
+}
+
+.header-slider-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(73, 121, 129, 0.7), rgba(52, 117, 143, 0.5)),
+    url(/image/img3.jpeg);
+  
+    background-size: cover;
+    background-position: center;
+    animation: slader2 10s infinite;
+
+}
+
+.header-slider-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(73, 121, 129, 0.7), rgba(52, 117, 143, 0.5)),
+    url(/image/img2.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    animation: slader3 10s infinite;
+
+}
+
+.header-slider-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(73, 121, 129, 0.7), rgba(52, 117, 143, 0.5)),
+    url(/image/img1.jpg);
+  
+    background-size: cover;
+    background-position: center;
+    animation: slader4 10s infinite;
+
+}
+
